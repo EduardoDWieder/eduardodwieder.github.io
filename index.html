@@ -583,36 +583,30 @@
       <!-- /.container -->
     </section>
     <!-- End Skills Section -->
+    <!-- modify this form HTML and place wherever you want your form -->
+
     <!-- Contact Section -->
     <section id="contact" class="contact-section section-padding">
-      <div class="container">
-        <h2 class="section-title wow fadeInUp">Contato</h2>
+      <form class="container" action="https://formspree.io/f/xrgjbyvd" method="POST">
+        <h2 class="section-title wow fadeInUp">Vamos trabalhar juntos?</h2>
         <div class="row">
           <div class="col-md-12">
             <div class="contact-form">
               <strong>Envie-me uma mensagem.</strong>
               <div class="form-group">
-                <label for="InputName1">Nome</label>
-                <input type="text" name="name" class="form-control" id="InputName1" required="">
-              </div>
-              <div class="form-group">
                 <label for="InputEmail1">Email</label>
-                <input type="email" name="email" class="form-control" id="InputEmail1" required="">
+                <input type="email" name="_replyto" class="form-control" id="InputEmail1" required="">
               </div>
               <div class="form-group">
-                <label for="InputSubject">Assunto</label>
-                <input type="text" name="subject" class="form-control" id="InputSubject">
-              </div>
-              <div class="form-group">
-                <label for="InputTextarea">Mensagem</label>
+                <label for="InputTextarea">Mensagem</label></br>
                 <textarea name="message" class="form-control" id="InputTextarea" rows="5" required=""></textarea>
               </div>
-              <button type="button" onclick="enviarEmail()" name="Enviar" class="btn btn-primary">Enviar</button>
+              <button type="submit" name="Enviar" class="btn btn-primary">Enviar</button>
             </div>
           </div>          
         </div>
         <!-- /.row -->
-      </div>
+      </form>
       <!-- /.container -->
     </section>
     <!-- End Contact Section -->
