@@ -170,6 +170,11 @@ h6 {
     border-radius: 4px;
 }
 
+/*btn-full*/
+.btn-full{
+    width: 100%;
+}
+
 /*btn-primary*/
 .btn-primary{
     background-color:#68c3a3;
