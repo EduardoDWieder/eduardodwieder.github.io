@@ -35,6 +35,16 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="assets/images/ico/apple-touch-icon-57-precomposed.png">
+
+        <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K98PXNBP2S"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-K98PXNBP2S');
+    </script>
   </head>
   
   <body>
@@ -571,37 +581,30 @@
     <!-- >>>>>>>>>>>>>>>> Price and Plans Area End <<<<<<<<<<<<<<<< -->
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-      <div class="container">
-        <h2 class="section-title wow fadeInUp">Contato</h2>
+    <section id="contact" class="contact-section section-padding">
+      <form class="container" action="https://formspree.io/f/xrgjbyvd" method="POST">
+        <h2 class="section-title wow fadeInUp">Venha conhecer nossos jogos :)</h2>
         <div class="row">
           <div class="col-md-12">
             <div class="contact-form">
-              <strong>Solicite uma experiencia ou um orçamento. Venha conhecer nossos jogos :)</strong>
-              <div class="form-group">
-                <label for="InputName1">Nome</label>
-                <input type="text" name="name" class="form-control" id="InputName1" required="">
-              </div>
+              <strong>Solicite uma experiencia ou um orçamento.</strong>
               <div class="form-group">
                 <label for="InputEmail1">Email</label>
-                <input type="email" name="email" class="form-control" id="InputEmail1" required="">
+                <input type="email" name="_replyto" class="form-control" id="InputEmail1" required="">
               </div>
               <div class="form-group">
-                <label for="InputSubject">Assunto</label>
-                <input type="text" name="subject" class="form-control" id="InputSubject">
-              </div>
-              <div class="form-group">
-                <label for="InputTextarea">Mensagem</label>
+                <label for="InputTextarea">Mensagem</label></br>
                 <textarea name="message" class="form-control" id="InputTextarea" rows="5" required=""></textarea>
               </div>
-              <button type="button" onclick="enviarEmail()" name="Enviar" class="btn btn-primary">Enviar</button>
+              <button type="submit" name="Enviar" class="btn btn-primary">Enviar</button>
             </div>
           </div>          
         </div>
         <!-- /.row -->
-      </div>
+      </form>
       <!-- /.container -->
     </section>
+              
     <!-- End Contact Section -->
     <!-- Footer Section -->
     <footer class="footer-wrapper">
